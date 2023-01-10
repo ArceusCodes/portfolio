@@ -1,0 +1,121 @@
+/* Page Reset */
+body {
+	scroll-behavior: smooth;
+	font-family: 'Didact Gothic', sans-serif;
+	background-color: rgb(243, 243, 243);
+	color: rgb(69, 69, 71);
+}
+
+/* Header */
+/* Complete Nav Bar */
+nav {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+li {
+	display: inline;
+	margin-right: 40px;
+	background-color: rgb(64, 64, 64);
+	font-size: 19px;
+	padding: 15px 20px 15px 20px;
+	border-radius: 10px;
+}
+#darkmode-button {
+	margin-right: 0px;
+	padding: 0px;
+	border-radius: 0px;
+	background-color: rgb(243, 243, 243);
+}
+a {
+	text-decoration: none;
+	color: rgb(243, 243, 243);
+}
+@keyframes change-color {
+	from {background-color: none;}
+	to {background-color: rgb(116 107 107);}
+}
+.hover-animation:hover{
+	animation: change-color 0.5s forwards;
+}
+
+/* Making the navbar responsive */
+@media (max-width: 553px){
+	li {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		
+	}
+	#projectsbutton {
+		position: relative; top: 50px;
+	}
+}
+
+
+/* Main */
+h1#name {
+	text-align: center;
+	font-size: 70px;
+	margin-top: 25px;
+}
+@media (max-width: 475px) {
+	h1#name {
+		position: relative; top: 1%;
+		text-align: center;
+	}
+}
+article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 19px;
+	text-align: center;
+	margin-bottom: 68px;
+}
+.IGGit {
+	color: rgb(69, 69, 71);
+	background-color: rgb(243, 243, 243);
+	text-decoration: underline;
+}
+img {
+	position: relative; top: 3px;
+}
+#githubcontact {
+	position: relative; top: 4px;
+}
+
+
+/* Footer */
+#footer {
+	position: relative; top: 1px;
+	background-color: #e3e3e5;
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+aside {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#github {
+	color: rgb(69, 69, 71);
+	background-color: #e3e3e5;
+}
+#github:hover {
+	text-decoration: underline;
+}
+/* Making the footer responsive */
+@media (max-width: 1262px) {
+	#footer {
+		width: 100%;
+		position: static;
+	}
+	#github {
+		text-align: center;
+	}
+}
