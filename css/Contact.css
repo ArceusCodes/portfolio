@@ -46,8 +46,7 @@ a {
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		margin-bottom: 5px;
-		
+		margin-bottom: 5px;	
 	}
 	#projectsbutton {
 		position: relative; top: 50px;
